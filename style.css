@@ -1,18 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     background: #FFFFFF;
+    font-family: 'Heebo', sans-serif;
 }
 
 header{
-    font-family: 'Heebo', sans-serif;
+    height: 37px;
+    color: #21243D;
+    top: 0px;
+    position: sticky;
     font-weight: 500;
     overflow: hidden;
     padding: 15px 60px;
     margin-bottom: 130px;
+    z-index: 1;
+    background-color: #EDF7FA;
+}
+
+.itens:link{
+    text-decoration: none;
+    color: #21243D;
+}
+.itens:visited{
+    color: #21243D;
+}
+
+.itens:hover{
+    color: #FF6464;
 }
 
 .itens{
+    transition-property: all;
+    transition-duration: 0.20s;
     font-size: 20px;
     margin-left: 20px;
     float: right;
@@ -23,7 +47,6 @@ header{
 section{
     color: #21243D;
     padding: 0px 13%;
-    margin-bottom: 140px;
     position: relative;
 }
 
@@ -31,7 +54,6 @@ section{
     width: 650px;
     height: 120px;
     margin-bottom: 40px;
-    font-family: 'Heebo', sans-serif;
     font-weight: 700;
     font-size: 44px;
 }
@@ -39,9 +61,9 @@ section{
 #bio{
     width: 650px;
     height: 66px; 
-    font-family: 'Heebo', sans-serif;
     font-weight: 400;
-    font-size: 18px;    
+    font-size: 18px;
+    margin-bottom: 120px;    
 }
 
 .fundo_foto{
@@ -53,6 +75,7 @@ section{
     border-radius: 50%;
     background: #EDF7FA;
 }
+
 .foto{
     overflow: hidden;
     position: absolute;
@@ -65,20 +88,29 @@ section{
     background-size: cover;
     background-position-y: 30%;
 }
+#pt{
+    height: 50px;
+}
+
+.roll_1{
+    margin: 0;
+    padding: 0;
+    height: 150px;
+}
 
 /* Segunda Seção */
 
 .posts{
     padding-top: 10px;
-    font-family: 'Heebo', sans-serif;
     background-color: #EDF7FA;
-    height: 400px;
+    height: 430px;
 }
 
-#titulo{
+.titulo{
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 25px;
+    margin-top: 4px;
 }
 
 h1{
@@ -107,6 +139,115 @@ p{
     padding: 24px;
     background-color: #FFFFFF;
     display: inline-block;
-    width: 480px;
+    width: 430px;
     height: 250px;
+}
+
+.ver_todas{
+    top: 35px;
+    right: 14.7%;
+    position: absolute;
+    color: #00A8CC;
+    font-size: 18px;
+    font-weight: 400;
+    transition-property: all;
+    transition-duration: 0.20s;
+
+}
+
+.ver_todas:link{text-decoration: none; color: #00A8CC;}
+.ver_todas:visited{color: #00A8CC;}
+.ver_todas:hover{color: #FF6464;}
+
+/* Terceira Seção */
+
+.trabalhos{
+    color: #21243D;
+    height: 900px;
+}
+
+.titulo2{
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.trabalho{
+    position: relative;
+    margin-bottom: 40px;
+    height: 220px;
+}
+
+.imagem{
+    background-image: url(./assets/fotoCV.jpeg);
+    background-size: cover;
+    overflow: hidden;
+    background-position-y: 30%;
+    width: 260px;
+    height: 220px;
+    border-radius: 7px;
+}
+
+
+.titulo_trabalho{
+    font-size: 32px;
+    left: 290px;
+    top: -25px;
+    position: absolute;
+}
+
+.descricao{
+    font-size: 18px;
+    left: 290px;
+    top: 135px;
+    position: absolute;
+    width: 650px;
+}
+
+.data_trabalho{
+    padding-left: 10px; 
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #142850;
+    color: #FFFFFF;
+    width: 58px;
+    border-radius: 40px;
+    position: absolute;
+    left: 290px;
+    top: 60px;
+}
+
+.linguagens{
+    font-size: 22px;
+    color: #8695A4;
+    position: absolute;
+    left: 390px;
+    top: 58px;
+}
+
+/*Rodape*/
+
+footer{
+    position: relative;
+    height: 200px;
+}
+
+.rodape{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    transform: translate(-50%,-80%);
+}
+
+.nota{
+    font-size: 14px;
+    position: absolute;
+    top: 20px;
+    margin-left: 47px;
+}
+
+.icones{
+    margin-left: 34px;
 }
