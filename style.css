@@ -78,6 +78,7 @@ section{
     height: 300px;
     border-radius: 50%;
     background: #EDF7FA;
+    box-shadow: 2px 2px 20px -14px #00A8CC;
 }
 
 .foto{
@@ -155,6 +156,7 @@ p{
     width: 430px;
     height: 250px;
     background-color: #FFFFFF;
+    box-shadow: 5px 5px 10px -10px #00A8CC;
 }
 
 .postagem2{
@@ -217,6 +219,7 @@ p{
     width: 260px;
     height: 220px;
     border-radius: 10px;
+    box-shadow: 3px 3px 20px -10px #00A8CC;
     object-fit: cover;
 }
 
