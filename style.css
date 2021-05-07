@@ -17,22 +17,14 @@ header{
     font-weight: 500;
     overflow: hidden;
     padding: 15px 60px;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     z-index: 1;
     background-color: #EDF7FA;
 }
 
-.itens:link{
-    text-decoration: none;
-    color: #21243D;
-}
-.itens:visited{
-    color: #21243D;
-}
-
-.itens:hover{
-    color: #FF6464;
-}
+.itens:link{text-decoration: none;color: #21243D;}
+.itens:visited{color: #21243D;}
+.itens:hover{color: #FF6464;}
 
 .itens{
     transition-property: all;
@@ -41,16 +33,26 @@ header{
     margin-left: 20px;
     float: right;
 }
-
 /* Primeira Seção */
-
-section{
-    color: #21243D;
-    padding: 0px 13%;
+.secao1{
+    height: 380px;
+    width: 1000px;
+    margin: auto;
     position: relative;
 }
 
+section{
+    color: #21243D;
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
 #apresentacao{
+    position: absolute;
+    left: 0px;
+    top: 70px;
     width: 650px;
     height: 120px;
     margin-bottom: 40px;
@@ -59,17 +61,19 @@ section{
 }
 
 #bio{
-    width: 650px;
-    height: 66px; 
+    position: absolute;
+    left: 0px;
+    top: 230px;
+    width: 600px;
+    height: 80px; 
     font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 120px;    
+    font-size: 18px;    
 }
 
 .fundo_foto{
     position: absolute;
-    right: 15%;
-    top: -10%;
+    left: 685px;
+    top: 32px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -79,8 +83,8 @@ section{
 .foto{
     overflow: hidden;
     position: absolute;
-    right: 14.6%;
-    top: -15%;
+    left: 690px;
+    top: 20px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -99,14 +103,24 @@ section{
 }
 
 /* Segunda Seção */
-
+.secao2{
+    margin: auto;
+    margin-bottom: 0px;
+    height: 380px;
+    width: 1000px;
+    position: relative;
+}
 .posts{
-    padding-top: 10px;
+
     background-color: #EDF7FA;
-    height: 430px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 0px;
+    height: 340px;
 }
 
 .titulo{
+    
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 25px;
@@ -122,6 +136,7 @@ h1{
 }
 
 .data{
+    margin-top: 25px;
     margin-bottom: 15px;
     font-size: 20px;
     padding: 0;
@@ -133,19 +148,22 @@ p{
     padding: 0;
     margin: 0;
 }
-
-.postagem{
+.postagem1, .postagem2{
+    position:absolute;
     border-radius: 10px;
     padding: 24px;
-    background-color: #FFFFFF;
-    display: inline-block;
     width: 430px;
     height: 250px;
+    background-color: #FFFFFF;
+}
+
+.postagem2{
+    left: 522px;
 }
 
 .ver_todas{
-    top: 35px;
-    right: 14.7%;
+    top: 15px;
+    right: 20px;
     position: absolute;
     color: #00A8CC;
     font-size: 18px;
@@ -155,15 +173,26 @@ p{
 
 }
 
+#tb{
+    height: 50px;
+    background-color: #EDF7FA;
+}
+
 .ver_todas:link{text-decoration: none; color: #00A8CC;}
 .ver_todas:visited{color: #00A8CC;}
 .ver_todas:hover{color: #FF6464;}
 
 /* Terceira Seção */
+.secao3{
+    margin: auto;
+    height: 340px;
+    width: 1000px;
+    position: relative;
+}
 
 .trabalhos{
     color: #21243D;
-    height: 900px;
+    height: 340px;
 }
 
 .titulo2{
@@ -180,20 +209,22 @@ p{
 }
 
 .imagem{
-    background-image: url(./assets/fotoCV.jpeg);
-    background-size: cover;
-    overflow: hidden;
-    background-position-y: 30%;
     width: 260px;
     height: 220px;
-    border-radius: 7px;
+}
+
+.imagem img{
+    width: 260px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 
 .titulo_trabalho{
     font-size: 32px;
-    left: 290px;
-    top: -25px;
+    left: 0px;
+    top: -15px;
     position: absolute;
 }
 
@@ -203,51 +234,127 @@ p{
     top: 135px;
     position: absolute;
     width: 650px;
+    left: 0px;
+    top: 146px;
 }
 
-.data_trabalho{
+
+.link{
     padding-left: 10px; 
     font-size: 20px;
     font-weight: 900;
     background-color: #142850;
     color: #FFFFFF;
-    width: 58px;
+    width: 101px;
     border-radius: 40px;
     position: absolute;
-    left: 290px;
-    top: 60px;
+    left: 0px;
+    top: 80px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.link:link{text-decoration: none; color: #FFFFFF;}
+.link:visited{color: #FFFFFF;}
+.link:hover{color: #FF6464; background-color:#FFFFFF;}
+
+.repositorio{
+    padding-left: 10px; 
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #142850;
+    color: #FFFFFF;
+    width: 114px;
+    border-radius: 40px;
+    position: absolute;
+    left: 135px;
+    top: 80px;
+    transition-property: all;
+    transition-duration: 0.7s;
 }
 
-.linguagens{
+.repositorio:link{text-decoration: none; color: #FFFFFF;}
+.repositorio:visited{color: #FFFFFF;}
+.repositorio:hover{color: #FF6464; background-color:#FFFFFF;}
+
+.linguagens_data{
     font-size: 22px;
     color: #8695A4;
     position: absolute;
-    left: 390px;
-    top: 58px;
+    left: 285px;
+    top: 77px;
+}
+
+.texto_trabalho{
+    height: 220px;
+    width: 720px;
+    position:relative;
+    left: 280px;
+    top: -220px;
 }
 
 /*Rodape*/
 
 footer{
     position: relative;
-    height: 200px;
+    height: 180px;
 }
 
 .rodape{
+    word-spacing: 25px;
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 300px;
+    width: 90px;
     transform: translate(-50%,-80%);
 }
 
 .nota{
-    font-size: 14px;
     position: absolute;
-    top: 20px;
-    margin-left: 47px;
+    left: 50%;
+    top: 70%;
+    width: 245px;
+    font-size: 16;
+    transform: translate(-50%,-40%);
 }
 
-.icones{
-    margin-left: 34px;
+.icones_git{
+    margin-right: 30px;
+    float: left;
+    background: url(./assets/git_hub.png);
+    width: 30px;
+    height: 30px;
+    transition-property: all;
+    transition-duration: 0.4s;
 }
+
+
+.icones_linkedin{
+    float: left;
+    background: url(./assets/Linkedin.png);
+    width: 30px;
+    height: 30px;
+    transition-property: all;
+    transition-duration: 0.4s;
+}
+
+.transition_postagem{
+    color:#21243D;
+    font-size: 28px;
+    font-weight: 700;
+    transition-property: all;
+    transition-duration: 0.20s;
+}
+
+.transition_postagem:link{text-decoration: none; color: #21243D;}
+.transition_postagem:visited{color: #21243D;}
+.transition_postagem:hover{color: #FF6464;}
+
+.icones_git:link{text-decoration: none;}
+.icones_git:visited{background: url(./assets/git_hub.png);}
+.icones_git:hover{background: url(./assets/git_hub_vermelho.png);}
+
+.icones_linkedin:link{text-decoration: none;}
+.icones_linkedin:visited{background: url(./assets/Linkedin.png);}
+.icones_linkedin:hover{background: url(./assets/Linkedin_vermelho.png)}
+
+/*Responsividade */
