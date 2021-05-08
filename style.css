@@ -93,6 +93,7 @@ section{
     background-size: cover;
     background-position-y: 30%;
 }
+
 #pt{
     height: 50px;
 }
@@ -172,7 +173,6 @@ p{
     font-weight: 400;
     transition-property: all;
     transition-duration: 0.20s;
-
 }
 
 #tb{
@@ -363,12 +363,29 @@ footer{
 /*Responsividade Web*/
 
 @media screen and (max-width: 1040px){
+    #pt{
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 100%;
+        top: 860px;
+        z-index: -10;
+    }
+    #tb{
+        position: absolute;
+        background-color: #FFFFFF;
+        width: 100%;
+        top: 1780px;
+        z-index: -10;
+    }
     body{
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
+    
     header{
         padding: 0;
-        width: 100%;
+        margin: 0;
         height: 67px;
     }
     .posicao{
@@ -386,112 +403,98 @@ footer{
         display: inline-block;
     }
     .secao1{
-        height: 730px;
         width: 100%;
+        height: initial;
+        margin-top: 0;
+        margin: 0;
+        padding: 0;
     }
-    .foto{
-        position: unset;
+
+    .fundo_foto, .foto, #apresentacao, #bio{
+        position: initial;
         margin: auto;
-        z-index: 1;
+        margin-bottom: 40px;
+        padding: 0;
     }
+    
     .fundo_foto{
         z-index: -1;
-        left: 50%;
-        top: 4px;
-        transform: translateX(-52%);
-    }
-    #apresentacao{
-        width: 400px;
-        height: 200px;
-        text-align: center;
-        left: 50%;
-        top: 360px;
+        position: absolute;
+        top: 6px;
+        left: 49%;
         transform: translateX(-50%);
     }
-    #bio{
-        width: 400px;
-        text-align: center;
-        left: 50%;
-        top: 600px;
-        transform: translateX(-50%);
+    .foto{
+        margin-top: 70px;
     }
-    .secao2{
-        height: 710px;
+
+    #apresentacao, #bio{
+        height: unset;  
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+    }
+
+    .secao2{ 
+        height: initial;
         width: 100%;
     }
     .posts{
-        height: 710px;
+        height: initial;
+    }
+    .titulo, .postagem1, .postagem2{
+        position: initial;
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    .titulo{
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
-    .titulo{
-        position: absolute;
-        width: 300px;
-        text-align: center;
-        left: 50%;
-        top: 10px;
-        transform: translateX(-50%);   
+    .postagem1, .postagem2{
+        width: 87vw;
+        height: unset;
+        padding: 20px;
+        box-sizing: border-box;
     }
-    .postagem1{
-        position: absolute;
-        top: 75px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .postagem2{
-        position: absolute;
-        top: 420px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .secao3{
+
+    /* resetando todas as configurações da secao 3 */
+
+    .secao3,.trabalhos,.titulo2, .imagem, .texto_trabalho, .trabalho, .imagem img, .titulo_trabalho, .repositorio, .link, .descricao, .linguagens_data{
+        height: unset;
         width: 100%;
+        position: initial;
+        margin: auto;
+        padding: 0px;
+        box-sizing: border-box;
     }
-    .trabalhos{
-        height: 800px;
-    }
+    /* ajustando valores específicos */
 
     .titulo2{
-        position: absolute;
-        width: 250px;
-        left: 50%;
-        top: 4px;
-        transform: translateX(-50%);
-    }
-    .imagem{
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        width: 477px;
-        height: 403.71px;
-        left: 50%;
-        top: 85px;
-        transform: translateX(-50%);
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .imagem img{
-        padding: 0;
-        margin: 0;
-        width: 477px;
-        height: 403.71px;
-    }
-
-    .texto_trabalho{
-        text-align: left;
-        position: absolute;
-        width: 477px;
-        left: 50%;
-        top: 540px;
-        transform: translateX(-50%);
+        width: 80%;
+        height: 80%;
+        border-radius: 20px;
     }
     .titulo_trabalho{
-
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .repositorio, .link{
+        margin-bottom: 18px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        display: block;
+        width: 135px;
     }
     .descricao{
-        text-align: left;
-        width: 477px;
-
-    }
-
-    .trabalho{
-        height: 500px;
+        width: 80%;
+        margin-top: 20px;
     }
 }
